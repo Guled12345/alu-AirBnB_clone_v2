@@ -20,16 +20,13 @@ This project is aimed at devoloping a simplified version of the hbnb(airbnb) web
 
 ## Command interpreter Usage
 
-| **Name** | **Description** |
-| create | Creates a new instance of the class passed by argument. |
-
-| show | Prints the string representation of an instance. |
-
-| \*destroy | Deletes an instance that was already created. |
-
-| all | Prints string representation of all instances or of all instances of a specified class. |
-
-| \*update | Updates an instance attribute if exists otherwise create it. |
+| **Name**  | **Description**                                                                         |
+| --------- | --------------------------------------------------------------------------------------- |
+| create    | Creates a new instance of the class passed by argument.                                 |
+| show      | Prints the string representation of an instance.                                        |
+| \*destroy | Deletes an instance that was already created.                                           |
+| all       | Prints string representation of all instances or of all instances of a specified class. |
+| \*update  | Updates an instance attribute if exists otherwise create it.                            |
 
 | help | Show all commands or display information about a specific command. |
 
@@ -41,22 +38,16 @@ This project is aimed at devoloping a simplified version of the hbnb(airbnb) web
 
 ### Continuation with examples
 
-| Command                        | Example                                               |
-| ------------------------------ | ----------------------------------------------------- |
-| Run the console                | ./console.py                                          |
-| ---                            | ---                                                   |
-| Quit the console               | (hbnb) quit                                           |
-| ---                            | ---                                                   |
-| Display the help for a command | (hbnb) help <command>                                 |
-| ---                            | ---                                                   |
-| Create an object               | (hbnb) create <class>                                 |
-| Show an object                 | (hbnb) show <class> <id> or (hbnb) <class>.show(<id>) |
-
-| Destroy an object | (hbnb) destroy <class> <id> or (hbnb) <class>.destroy(<id>) |
-
-| Show all objects, or all instances of a class | (hbnb) all or (hbnb) all <class> |
-
-| Update an attribute of an object (hbnb) | update <class> <id> <attribute name> "<attribute value>" or (hbnb) <class>.update(<id>, <attribute name>, "<attribute value>") |
+| Command                                       | Example                                                                                                                        |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Run the console                               | ./console.py                                                                                                                   |
+| Quit the console                              | (hbnb) quit                                                                                                                    |
+| Display the help for a command                | (hbnb) help <command>                                                                                                          |
+| Create an object                              | (hbnb) create <class>                                                                                                          |
+| Show an object                                | (hbnb) show <class> <id> or (hbnb) <class>.show(<id>)                                                                          |
+| Destroy an object                             | (hbnb) destroy <class> <id> or (hbnb) <class>.destroy(<id>)                                                                    |
+| Show all objects, or all instances of a class | (hbnb) all or (hbnb) all <class>                                                                                               |
+| Update an attribute of an object (hbnb)       | update <class> <id> <attribute name> "<attribute value>" or (hbnb) <class>.update(<id>, <attribute name>, "<attribute value>") |
 
 **Models Used**
 
@@ -85,5 +76,6 @@ This project is aimed at devoloping a simplified version of the hbnb(airbnb) web
 (hbnb) show Place 492f60f3-ff1e-43c7-bb11-f8407b04dd59
 [Place] (492f60f3-ff1e-43c7-bb11-f8407b04dd59) {'id': '492f60f3-ff1e-43c7-bb11-f8407b04dd59', 'created_at': datetime.datetime(2020, 7, 1, 11, 36, 24, 576486), 'updated_at': datetime.datetime(2020, 7, 1, 11, 36, 24, 576530), 'first_name': 'John'}
 
-**Tests**
+### Tests
+
 All the codes will be tested with the unittest module.
