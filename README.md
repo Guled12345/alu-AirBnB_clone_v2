@@ -31,3 +31,10 @@ update	update <class_name> <object_id> <attribute name> “<attribute value>” 
 help	help ; help <command_name>
 quit	quit
 EOF	EOF ; (ctrl + d)
+**Example 2: Using basic update with an Id and show command:**
+(hbnb) update BaseModel 99f01e9a-99c0-42af-8c10-c35cadee1d8f first_name "Betty"
+(hbnb) show BaseModel 99f01e9a-99c0-42af-8c10-c35cadee1d8f
+[BaseModel] (99f01e9a-99c0-42af-8c10-c35cadee1d8f) {'id': '99f01e9a-99c0-42af-8c10-c35cadee1d8f', 'created_at': datetime.datetime(2020, 7, 1, 11, 36, 30, 773211), 'updated_at': datetime.datetime(2020, 7, 1, 11, 36, 30, 773236), 'first_name': 'Betty'}
+(hbnb) Place.update("492f60f3-ff1e-43c7-bb11-f8407b04dd59", "first_name", "John")
+(hbnb) show Place 492f60f3-ff1e-43c7-bb11-f8407b04dd59
+[Place] (492f60f3-ff1e-43c7-bb11-f8407b04dd59) {'id': '492f60f3-ff1e-43c7-bb11-f8407b04dd59', 'created_at': datetime.datetime(2020, 7, 1, 11, 36, 24, 576486), 'updated_at': datetime.datetime(2020, 7, 1, 11, 36, 24, 576530), 'first_name': 'John'}
