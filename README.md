@@ -18,47 +18,45 @@ This project is aimed at devoloping a simplified version of the hbnb(airbnb) web
 
 \*\* This is the first step and it consists of a custom command line interface for data management, and the base classes for storage of data. \*\*
 
-**Command interpreter Usage:**
+## Command interpreter Usage
 
-| Name | Description |
-| *create | Creates a new instance of the class passed by argument. |
-| ------- | -------------------------------------------- |
+| **Name** | **Description** |
+| create | Creates a new instance of the class passed by argument. |
+
 | show | Prints the string representation of an instance. |
-| --- | --- |
-| *destroy | Deletes an instance that was already created. |
-| --- | --- |
+
+| \*destroy | Deletes an instance that was already created. |
+
 | all | Prints string representation of all instances or of all instances of a specified class. |
-| --- | --- |
+
 | \*update | Updates an instance attribute if exists otherwise create it. |
-| --- | --- |
+
 | help | Show all commands or display information about a specific command. |
-| --- | --- |
+
 | quit | Exit the console. |
-| --- | --- |
+
 | EOF | Exit the console. |
 
 \*create, destroy and update commands save changes into a JSON file.
 
-**Continuation with examples**
+### Continuation with examples
 
-| Command                                       | Example                                                                                                                        |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| Run the console                               | ./console.py                                                                                                                   |
-| ---                                           | ---                                                                                                                            |
-| Quit the console                              | (hbnb) quit                                                                                                                    |
-| ---                                           | ---                                                                                                                            |
-| Display the help for a command                | (hbnb) help <command>                                                                                                          |
-| ---                                           | ---                                                                                                                            |
-| Create an object                              | (hbnb) create <class>                                                                                                          |
-| ---                                           | ---                                                                                                                            |
-| Show an object                                | (hbnb) show <class> <id> or (hbnb) <class>.show(<id>)                                                                          |
-| ---                                           | ---                                                                                                                            |
-| Destroy an object                             | (hbnb) destroy <class> <id> or (hbnb) <class>.destroy(<id>)                                                                    |
-| ---                                           | ---                                                                                                                            |
-| Show all objects, or all instances of a class | (hbnb) all or (hbnb) all <class>                                                                                               |
-| ---                                           | ---                                                                                                                            |
-| Update an attribute of an object (hbnb)       | update <class> <id> <attribute name> "<attribute value>" or (hbnb) <class>.update(<id>, <attribute name>, "<attribute value>") |
-| ---                                           | ---                                                                                                                            |
+| Command                        | Example                                               |
+| ------------------------------ | ----------------------------------------------------- |
+| Run the console                | ./console.py                                          |
+| ---                            | ---                                                   |
+| Quit the console               | (hbnb) quit                                           |
+| ---                            | ---                                                   |
+| Display the help for a command | (hbnb) help <command>                                 |
+| ---                            | ---                                                   |
+| Create an object               | (hbnb) create <class>                                 |
+| Show an object                 | (hbnb) show <class> <id> or (hbnb) <class>.show(<id>) |
+
+| Destroy an object | (hbnb) destroy <class> <id> or (hbnb) <class>.destroy(<id>) |
+
+| Show all objects, or all instances of a class | (hbnb) all or (hbnb) all <class> |
+
+| Update an attribute of an object (hbnb) | update <class> <id> <attribute name> "<attribute value>" or (hbnb) <class>.update(<id>, <attribute name>, "<attribute value>") |
 
 **Models Used**
 
