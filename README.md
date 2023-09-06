@@ -31,6 +31,7 @@ update	update <class_name> <object_id> <attribute name> “<attribute value>” 
 help	help ; help <command_name>
 quit	quit
 EOF	EOF ; (ctrl + d)
+
 **Example 2: Using basic update with an Id and show command:**
 (hbnb) update BaseModel 99f01e9a-99c0-42af-8c10-c35cadee1d8f first_name "Betty"
 (hbnb) show BaseModel 99f01e9a-99c0-42af-8c10-c35cadee1d8f
