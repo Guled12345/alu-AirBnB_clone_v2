@@ -3,7 +3,7 @@
 from models.base_model import BaseModel
 
 
-class user(BaseModel):
+class User(BaseModel):
     """Represnt a user"""
     
     email = ""
