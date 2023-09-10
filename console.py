@@ -96,7 +96,7 @@ class HBNBCommand(cmd.Cmd):
             Creates a new instance of a class,
             saves it (to the JSON file) and prints the id.
             Usage: create <class_name>
-       """
+        """
         # If the class name is missing,
         # print ** class name missing ** (ex: $ create)
         if len(args) < 1:
@@ -208,10 +208,10 @@ class HBNBCommand(cmd.Cmd):
 
     def do_update(self, args):
         """Usage: to update <class> <id> <attribute_name> <attribute_value> or
-       <class>.update(<id>, <attribute_name>, <attribute_value>) or
-       <class>.update(<id>, <dictionary>)
+        <class>.update(<id>, <attribute_name>, <attribute_value>) or
+        <class>.update(<id>, <dictionary>)
         Update class instance of given id by adding or updating
-       given attribute key/value pair or dictionary."""
+        given attribute key/value pair or dictionary."""
 
         arg_list = args.split()
         all_objects = storage.all()
