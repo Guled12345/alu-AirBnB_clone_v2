@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines the BaseModel class."""
+"""Defines BaseModel class."""
 import models
 from uuid import uuid4
 from datetime import datetime
@@ -18,16 +18,16 @@ class BaseModel:
                 when an instance is created.
                 It will be updated every time the object change.
     """
-    
+
     def __init__(self, *args, **kwargs):
-        """Initializing the class"""
-        
+        """Initialize new BaseModel."""
+
         tform = "%Y-%m-%dT%H:%M:%S.%f"
-        
+
         self.id = str(uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
-        
+
         if kwargs:
             kwargs["created_at"] = datetime.strptime(
                 kwargs["created_at"], tform)
@@ -40,21 +40,24 @@ class BaseModel:
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
             models.storage.new(self)
-        
+
     def save(self):
-        """Updates the updated_at attribute with current datetime"""
+        """Set updated_at with current datetime."""
         self.updated_at = datetime.now()
         models.storage.save()
-        
+
     def to_dict(self):
-        """Returns a dictionary containing all keys/values of __dict__"""
+        """Return dictionary of BaseModel instance.
+
+        Includes key/value pair __class__.
+        """
         rdict = self.__dict__.copy()
         rdict["created_at"] = self.created_at.isoformat()
         rdict["updated_at"] = self.updated_at.isoformat()
         rdict["__class__"] = self.__class__.__name__
         return rdict
-    
+
     def __str__(self):
-        """Returns a string representation of the instance"""
+        """Return print/str representation of BaseModel instance."""
         clname = self.__class__.__name__
         return "[{}] ({}) {}".format(clname, self.id, self.__dict__)
