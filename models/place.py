@@ -5,8 +5,7 @@ from models.base_model import BaseModel
 
 class Place(BaseModel):
     """
-    Represents a place.
-    
+    Represents a place
     Attributes:
         city_id (str): The city id
         user_id (str): The user id
@@ -20,7 +19,6 @@ class Place(BaseModel):
         longitude (float): The longitude
         amenity_ids (list): The amenity ids
     """
-    
     city_id = ""
     user_id = ""
     name = ""
@@ -32,4 +30,3 @@ class Place(BaseModel):
     latitude = 0.0
     longitude = 0.0
     amenity_ids = []
-    
