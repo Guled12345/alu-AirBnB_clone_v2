@@ -2,8 +2,8 @@ header {
   height: 70px;
   width: 100%;
   color: white;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc; /* solid border to ensure the border is visible */
   background-repeat: no-repeat;
   background-image: url("../images/logo.png");
-  background-position-x: 20px;
+  background-position-x: 20px; /* align the logo left and center vertically(20px to the left) */
 }
