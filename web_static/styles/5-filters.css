@@ -4,6 +4,7 @@
   width: 100%;
   border: 1px solid #dddddd;
   border-radius: 4px;
+  display: flex;
 }
 
 .container .filters button {
@@ -24,4 +25,34 @@
 .container .filters button:hover {
   /*change opacity to 90% when mouse is on button*/
   opacity: 90%;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  margin-left: 45px;
+  border-right: 1px solid #dddddd;
+}
+
+.amenities {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  margin-left: 45px;
+}
+
+h3 {
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 12px;
 }
