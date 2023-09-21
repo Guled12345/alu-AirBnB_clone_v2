@@ -71,3 +71,28 @@ This project is aimed at devoloping a simplified version of the hbnb(airbnb) web
 ### Tests
 
 All the codes will be tested with the unittest module.
+
+# alu-AirBnB_clone - Web Static
+This is the front end of the Airbnb project. HTML is used to structure the page, while CSS does the styling.
+No Javascript is used.
+
+## How to start
+1. Clone the repository
+   git clone https://github.com/k-ganda/alu-AirBnB_clone.git
+
+2. Navigate to the repository
+   cd alu-AirBnB_clone
+
+3. Navigate to the directory
+   cd web_static
+
+4. Execute the HTML files by Opening them with a live server. 
+
+All **CSS files** are in the **styles** folder.
+All **images** are in the **images** folder.
+
+There are **8 HTML files**. These each show the steps to acquire the desired outlook of the project.
+The 8-index.html is the final one with all changes acquired from each step.
+After all the HTML files and CSS files are in place, the frontend should look like this:
+
+
