@@ -93,6 +93,8 @@ All **images** are in the **images** folder.
 
 There are **8 HTML files**. These each show the steps to acquire the desired outlook of the project.
 The 8-index.html is the final one with all changes acquired from each step.
+
 After all the HTML files and CSS files are in place, the frontend should look like this:
+![image](https://github.com/k-ganda/alu-AirBnB_clone/assets/116561806/2d595c6d-55a4-40c1-b2a0-2f9c35925b69)
 
 
